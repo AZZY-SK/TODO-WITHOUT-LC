@@ -81,7 +81,7 @@ function createtodo(eve) {
 function deletetodo(eli) {
   let removeid = eli.closest("li").id;
   //  cl(removeid)
-  let confirmation = confirm(`are you sure you want to delete ${removeid}`)
+  let confirmation = confirm(`are you sure you want to delete ${removeid} todo` )
 
   if (confirmation) {
     let getindex = todoArray.findIndex(todo => todo.id === removeid)
@@ -156,9 +156,9 @@ function updatetodo() {
     addbtn.classList.remove("d-none");
     cancelbtn.classList.add("d-none");
 
-    document.querySelectorAll(".remove").forEach(ele=>{
+    let deletebtn=document.querySelectorAll(".remove").forEach(ele=>{
              ele.style.pointerevents='auto';
-             ele.style.opacity='1';
+             ele.style.opacity='2';
     })
 
 }
@@ -177,6 +177,12 @@ function canceltodo(){
         updatebtn.classList.add("d-none");
         cancelbtn.classList.add("d-none");
         addbtn.classList.remove("d-none");
+
+         let deletebtn=document.querySelectorAll(".remove").forEach(ele=>{
+             ele.style.pointerevents='auto';
+             ele.style.opacity='2';
+    })
+
 
 }
 
