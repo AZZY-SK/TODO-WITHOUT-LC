@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO CRUD 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <h3 class="bg-info text-center p-2 text-white">TODO CRUD 2</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-body  border border-dark  pb-4">
+
+                        <form id="form">
+                            <div class="form-group mt-4 mb-3">
+
+                                <label for="input" class="sr-only ">enter todo</label>
+                                <input type="text" id="input" required placeholder="enter todo"
+                                    class="form-control mt-2">
+
+
+                            </div>
+                            <button id="addbtn" type="submit"
+                                class="bg-info btn btn-block btn-sm text-white rounded-3  border border-dark mt-4">Add
+                                Todo</button>
+
+                            <button id="updatebtn" type="button" class="bg-info btn btn-block btn-sm text-white rounded-3 border border-dark d-none mt-4 "  >Update Todo</button>  
+
+                            <button id="cancelbtn" class="bg-danger btn btn-block btn-sm text-black rounded-3 border border-dark mt-3 d-none" type="button">Cancel</button>
+
+                        </form>
+
+                    </div>
+                </div>
+               
+
+                </div>
+                 <div class="col-md-6 mt-5 ">
+
+                    <ul id="todolist" class="list-group">
+                        <!-- <li class="list-group-item d-flex justify-content-between align-items-center border border-dark ">
+                              <strong>angular</strong>
+                             <div>
+                                <i class="fa-solid fa-pen-to-square fa-2x text-info editbutton " role="button"></i>
+                            <i class="fa-solid fa-trash-can fa-2x text-danger" role="button"></i>
+                             </div>
+                        </li> -->
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>
